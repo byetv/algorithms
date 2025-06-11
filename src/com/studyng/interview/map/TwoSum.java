@@ -1,4 +1,4 @@
-package com.studyng.interview.arrays;
+package com.studyng.interview.map;
 
 import java.util.Arrays;
 import java.util.HashMap;

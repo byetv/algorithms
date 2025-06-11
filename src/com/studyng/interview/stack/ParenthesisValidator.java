@@ -3,6 +3,10 @@ package com.studyng.interview.stack;
 import java.util.Stack;
 
 public class ParenthesisValidator {
+    public static void main(String[] args) {
+        String input = "(()())()";
+        System.out.println("its valid? " + isValid(input));
+    }
 
     public static boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
@@ -28,8 +32,5 @@ public class ParenthesisValidator {
         return stack.isEmpty();
     }
 
-    public static void main(String[] args) {
-        String input = "(()())()";
-        System.out.println("its valid? " + isValid(input));
-    }
+
 }

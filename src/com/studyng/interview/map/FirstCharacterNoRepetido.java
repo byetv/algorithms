@@ -1,11 +1,11 @@
-package com.studyng.interview.strings;
+package com.studyng.interview.map;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Interview {
+public class FirstCharacterNoRepetido {
     public static void main(String[] args) {
-        String text = "aaabcccdeeef";
+        String text = "leetcodetdxl";
         Map<Character, Integer> map = new HashMap<>();
         String result = "";
 

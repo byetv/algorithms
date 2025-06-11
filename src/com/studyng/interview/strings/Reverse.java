@@ -5,9 +5,9 @@ public class Reverse {
     public static void main(String[] args) {
         String word = "hello  world";
 
-        System.out.println(new StringBuilder(word).reverse());
+        System.out.println("Reversed word with reverse function: " + new StringBuilder(word).reverse());
 
-        System.out.println("\n Reversed word: " + reverse(word));
+        System.out.println("\nReversed word without reverse function: " + reverse(word));
     }
 
     public static String reverse(String word) {
