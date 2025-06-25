@@ -32,4 +32,20 @@ public class Palindromo {
         }
         return true;
     }
+
+    public boolean isPalindrome(int x) {
+        // Negativos o números que terminan en 0 (pero no son 0) no pueden ser palíndromos
+        if (x < 0 || (x % 10 == 0 && x != 0)) return false;
+
+        int reversed = 0;
+        while (x > reversed) {
+            int digit = x % 10;
+            reversed = reversed * 10 + digit;
+            x /= 10;
+        }
+
+        // Para número par de cifras: x == reversed
+        // Para número impar de cifras: x == reversed / 10
+        return x == reversed || x == reversed / 10;
+    }
 }
